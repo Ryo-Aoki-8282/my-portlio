@@ -1,0 +1,88 @@
+
+/* ==========================================================================
+  Layout
+  ========================================================================== */
+
+/* Header
+----------------------------------------------------------------- */
+.l-header {
+  width: 100%;
+}
+
+.l-header__inner {
+  align-items: center;
+  background-color: #0b3661;
+  display: flex;
+  height: 154px;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.l-header__logo {
+  color: #fff;
+  font: normal normal 900 70px/70px Cooper Std;
+  margin-left: 63px
+}
+
+.l-header__nav {
+  margin-right: 52px;
+}
+
+.l-header__main {
+  display: flex;
+}
+
+.l-header__main-item {
+  font: normal normal 900 35px/35px Cooper Std;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.l-header__main-item:not(:last-child){
+  margin-right: 50px;
+}
+
+/* Main
+----------------------------------------------------------------- */
+
+/* ==========================================================================
+  Object
+  ========================================================================== */
+
+/* Component
+  ----------------------------------------------------------------- */
+
+/**
+  * Button
+  *
+  * Blah Blah Blah
+  */
+
+
+/**
+* Media
+*/
+
+/* Project
+  ----------------------------------------------------------------- */
+
+/**
+* Articles
+*/
+
+/* Utility
+  ----------------------------------------------------------------- */
+
+/**
+* Clearfix
+*/
+
+/**
+  * Display
+*/
+
+/**
+  * Margin
+*/
