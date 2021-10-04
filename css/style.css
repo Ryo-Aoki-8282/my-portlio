@@ -124,14 +124,66 @@ body {
   width: 100%;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .l-header__inner {
+    height: 100px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .l-header__inner {
+    height: 63px;
+  }
+}
+
 .l-header__logo {
   color: #fff;
-  font: normal normal 900 70px/70px Cooper Std;
-  margin-left: 63px;
+  font: normal normal 900 70px/70px 'Cooper Std', sans-serif;
+  margin-left: 3.2%;
+}
+
+@media print, screen and (max-width: 1730px) {
+  .l-header__logo {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+
+@media print, screen and (max-width: 1350px) {
+  .l-header__logo {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@media print, screen and (max-width: 1024px) {
+  .l-header__logo {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .l-header__logo {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 
 .l-header__nav {
   margin-right: 52px;
+}
+
+@media print, screen and (max-width: 1350px) {
+  .l-header__nav {
+    margin-right: 40px;
+  }
+}
+
+@media print, screen and (max-width: 1024px) {
+  .l-header__nav {
+    display: none;
+  }
 }
 
 .l-header__main {
@@ -147,8 +199,79 @@ body {
   color: #fff;
 }
 
+@media print, screen and (max-width: 1730px) {
+  .l-header__main-item {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+@media print, screen and (max-width: 1350px) {
+  .l-header__main-item {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .l-header__main-item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media print, screen and (max-width: 1350px) {
+  .l-header__main-item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.l-header_button {
+  height: 23px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none;
+  margin-right: 40px;
+  position: relative;
+  transition: all .5s;
+  width: 50px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .l-header_button {
+    display: inline-block;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .l-header_button {
+    margin-right: 20px;
+    width: 25px;
+  }
+}
+
+.l-header_button span {
+  background-color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  transition: all .5s;
+  width: 100%;
+}
+
+@media print, screen and (max-width: 599px) {
+  .l-header_button span {
+    border-radius: 2px;
+    height: 2px;
+  }
+}
+
+.l-header_button span:nth-of-type(2) {
+  top: 10px;
+}
+
+.l-header_button span:nth-of-type(3) {
+  bottom: 0;
 }
 
 /* Main

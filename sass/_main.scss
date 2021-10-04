@@ -16,17 +16,45 @@
   height: 154px;
   justify-content: space-between;
   width: 100%;
-  
+  @include tabletScreen {
+    height: 100px;
+  }
+  @include wideMobileScreen {
+    height: 63px;
+  }
 }
 
 .l-header__logo {
   color: #fff;
-  font: normal normal 900 70px/70px Cooper Std;
-  margin-left: 63px
+  font: normal normal 900 70px/70px 'Cooper Std', sans-serif;
+  margin-left: 3.2%;
+  @include adjustContentMedia(1730px){
+    font-size: 55px;
+    line-height: 55px;
+  }
+  @include adjustContentMedia(1350px){
+    font-size: 45px;
+    line-height: 45px;
+  }
+  @include tabletScreen {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  @include wideMobileScreen {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
+
 
 .l-header__nav {
   margin-right: 52px;
+  @include adjustContentMedia(1350px){
+    margin-right: 40px;
+  }
+  @include tabletScreen {
+    display: none;
+  }
 }
 
 .l-header__main {
@@ -39,9 +67,59 @@
     text-decoration: none;
     color: #fff;
   }
+  @include adjustContentMedia(1730px){
+    font-size: 25px;
+    line-height: 25px;
+  }
+  @include adjustContentMedia(1350px){
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 .l-header__main-item:not(:last-child){
   margin-right: 50px;
+  @include adjustContentMedia(1350px){
+    margin-right: 25px;
+  }
+}
+
+.l-header_button {
+  height: 23px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none;
+  margin-right: 40px;
+  position: relative;
+  transition: all .5s;
+  width: 50px;
+  @include tabletScreen {
+    display: inline-block;
+  }
+  @include wideMobileScreen {
+    margin-right: 20px;
+    width: 25px;
+  }
+  span {
+    background-color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    transition: all .5s;
+    width: 100%;
+    @include wideMobileScreen {
+      border-radius: 2px;
+      height: 2px;
+    }
+  }
+  span:nth-of-type(2) {
+    top: 10px;
+  }
+  span:nth-of-type(3) {
+    bottom: 0;
+  }
 }
 
 /* Main
