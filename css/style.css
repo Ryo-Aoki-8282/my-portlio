@@ -104,6 +104,15 @@ input, select {
 
 body {
   font-family: 'Noto Sans Japanese', sans-serif;
+  color: #0b3661;
+}
+
+/* ==========================================================================
+Foundation
+========================================================================== */
+@font-face {
+  font-family: "Gen Jyuu Gothic P";
+  src: url(/fonts/GenJyuuGothic-Medium.ttf);
 }
 
 /* ==========================================================================
@@ -311,6 +320,83 @@ body {
   margin-top: 200px;
   text-align: center;
   width: 648px;
+}
+
+.p-service__inner {
+  background-color: #BDE5CD65;
+  height: 959px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-service__title {
+  font: normal normal 900 55px/70px Cooper Std;
+  margin-top: 81px;
+  text-align: center;
+}
+
+.p-service__subtitle {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.p-service-block__heading {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.p-service-block__text {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.p-service-block--left {
+  background-color: #fff;
+  height: 242px;
+  position: absolute;
+  top: 262px;
+  left: 0;
+  width: 1507px;
+}
+
+.p-service-block__inner--left {
+  margin-left: 298px;
+  width: 870px;
+}
+
+.p-service-block__inner--left .p-service-block__heading {
+  margin-top: 20px;
+}
+
+.p-service-block__inner--left .p-service-block__text {
+  margin-top: 20px;
+}
+
+.p-service-block--right {
+  background-color: #fff;
+  bottom: 92px;
+  height: 242px;
+  right: 0;
+  position: absolute;
+  width: 1507px;
+}
+
+.p-service-block__inner--right {
+  margin-left: 369px;
+  width: 930px;
+}
+
+.p-service-block__inner--right .p-service-block__heading {
+  margin-top: 20px;
+}
+
+.p-service-block__inner--right .p-service-block__text {
+  margin-top: 20px;
 }
 
 /* Utility
