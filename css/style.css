@@ -399,6 +399,52 @@ Foundation
   margin-top: 20px;
 }
 
+.p-work__inner {
+  background-color: #fff;
+  height: 959px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.p-work__title {
+  font: normal normal 900 55px/70px Cooper Std;
+  margin-top: 81px;
+  text-align: center;
+}
+
+.p-work__subtitle {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.p-work-panel__block {
+  display: flex;
+  margin: 86px auto 0;
+  width: 80%;
+}
+
+.p-work-panel__item {
+  margin: 0 17px;
+}
+
+.p-work-panel__header {
+  font-family: Gen Jyuu Gothic P;
+  font-family: nomal;
+  font-size: 25px;
+  line-height: 25px;
+  margin-top: 24px;
+}
+
+.p-work-panel__text {
+  font-family: Gen Jyuu Gothic P;
+  font-family: nomal;
+  font-size: 25px;
+  line-height: 25px;
+}
+
 /* Utility
   ----------------------------------------------------------------- */
 /**
