@@ -333,6 +333,56 @@ Foundation
   margin-top: 42px;
 }
 
+.p-skills__inner {
+  height: 1183px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-skills__title {
+  font: normal normal 900 55px/70px Cooper Std;
+  margin-top: 81px;
+  text-align: center;
+}
+
+.p-skills__subtitle {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.p-skills-block__inner {
+  column-gap: 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 197px auto 0;
+  width: 76%;
+}
+
+.p-skills-block__item {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.p-skills-block__img {
+  margin-right: 23px;
+}
+
+.p-skills-block__header {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.p-skills-block__text {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+
 /* Utility
   ----------------------------------------------------------------- */
 
