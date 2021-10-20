@@ -1,0 +1,27 @@
+// メディアクエリ(スマホ小)
+@mixin mobileScreen($width-media: 413px) {
+  @media print, screen and (max-width: $width-media) {
+    @content;
+  }
+}
+
+// メディアクエリ(スマホ大)
+@mixin wideMobileScreen($width-media: 599px) {
+  @media print, screen and (max-width: $width-media) {
+    @content;
+  }
+}
+
+// メディアクエリ(タブレット)
+@mixin tabletScreen($width-media: 1024px) {
+  @media print, screen and (max-width: $width-media) {
+    @content;
+  }
+}
+
+// 微調整用メディアクエリ
+@mixin adjustContentMedia($width-media: 1450px) {
+  @media print, screen and (max-width: $width-media) {
+    @content;
+  }
+}

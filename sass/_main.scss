@@ -1,0 +1,399 @@
+/* ==========================================================================
+Foundation
+========================================================================== */
+@font-face {
+  font-family: "Gen Jyuu Gothic P";
+  src: url(/fonts/GenJyuuGothic-Medium.ttf);
+}
+
+/* ==========================================================================
+  Layout
+  ========================================================================== */
+
+/* Header
+----------------------------------------------------------------- */
+.l-header {
+  width: 100%;
+}
+
+.l-header__inner {
+  align-items: center;
+  background-color: #0b3661;
+  display: flex;
+  height: 154px;
+  justify-content: space-between;
+  width: 100%;
+  @include tabletScreen {
+    height: 100px;
+  }
+  @include wideMobileScreen {
+    height: 63px;
+  }
+}
+
+.l-header__logo {
+  color: #fff;
+  font: normal normal 900 70px/70px 'Cooper Std', sans-serif;
+  margin-left: 3.2%;
+  @include adjustContentMedia(1730px){
+    font-size: 55px;
+    line-height: 55px;
+  }
+  @include adjustContentMedia(1350px){
+    font-size: 45px;
+    line-height: 45px;
+  }
+  @include tabletScreen {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  @include wideMobileScreen {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+
+.l-header__nav {
+  margin-right: 52px;
+  @include adjustContentMedia(1350px){
+    margin-right: 40px;
+  }
+  @include tabletScreen {
+    display: none;
+  }
+}
+
+.l-header__main {
+  display: flex;
+}
+
+.l-header__main-item {
+  font: normal normal 900 35px/35px Cooper Std;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  @include adjustContentMedia(1730px){
+    font-size: 25px;
+    line-height: 25px;
+  }
+  @include adjustContentMedia(1350px){
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+.l-header__main-item:not(:last-child){
+  margin-right: 50px;
+  @include adjustContentMedia(1350px){
+    margin-right: 25px;
+  }
+}
+
+.l-header_button {
+  height: 23px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none;
+  margin-right: 40px;
+  position: relative;
+  transition: all .5s;
+  width: 50px;
+  @include tabletScreen {
+    display: inline-block;
+  }
+  @include wideMobileScreen {
+    margin-right: 20px;
+    width: 25px;
+  }
+  span {
+    background-color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    transition: all .5s;
+    width: 100%;
+    @include wideMobileScreen {
+      border-radius: 2px;
+      height: 2px;
+    }
+  }
+  span:nth-of-type(2) {
+    top: 10px;
+  }
+  span:nth-of-type(3) {
+    bottom: 0;
+  }
+}
+
+/* Main
+----------------------------------------------------------------- */
+
+/* ==========================================================================
+  Object
+  ========================================================================== */
+
+/* Component
+  ----------------------------------------------------------------- */
+
+/**
+  * Button
+  *
+  * Blah Blah Blah
+  */
+
+
+/**
+* Media
+*/
+
+/* Project
+  ----------------------------------------------------------------- */
+.p-home__inner {
+  background-image   : url("../img/home/home.jpg");
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 710px;
+  justify-content: center;
+  width: 100%;
+}
+
+.p-home__logo {
+  color: #0B3661;
+  display: flex;
+  flex-direction: column;
+  font: normal normal 900 100px/120px Cooper Std;
+  margin-top: 200px;
+  text-align: center;
+  width: 648px;
+}
+
+.p-service__inner {
+  background-color: #BDE5CD65;
+  height: 959px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-service__title {
+  font: normal normal 900 55px/70px Cooper Std;
+  margin-top: 81px;
+  text-align: center;
+}
+
+.p-service__subtitle {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.p-service-block__heading {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.p-service-block__text {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.p-service-block--left {
+  background-color: #fff;
+  height: 242px;
+  position: absolute;
+  top: 262px;
+  left: 0;
+  width: 1507px;
+}
+
+.p-service-block__inner--left {
+  margin-left: 298px;
+  width: 870px;
+  .p-service-block__heading {
+    margin-top: 20px;
+  }
+  .p-service-block__text {
+    margin-top: 20px;
+  }
+}
+
+.p-service-block--right {
+  background-color: #fff;
+  bottom: 92px;
+  height: 242px;
+  right: 0;
+  position: absolute;
+  width: 1507px;
+}
+
+.p-service-block__inner--right {
+  margin-left: 369px;
+  width: 930px;
+  .p-service-block__heading {
+    margin-top: 20px;
+  }
+  .p-service-block__text {
+    margin-top: 20px;
+  }
+}
+
+.p-work__inner {
+  background-color: #fff;
+  height: 959px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.p-work__title {
+  font: normal normal 900 55px/70px Cooper Std;
+  margin-top: 81px;
+  text-align: center;
+}
+
+.p-work__subtitle {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.p-work-panel__block {
+  display: flex;
+  margin: 86px auto 0;
+  width: 80%;
+}
+
+.p-work-panel__item {
+  margin: 0 17px;
+}
+
+.p-work-panel__header{
+  font-family: Gen Jyuu Gothic P;
+  font-family: nomal;
+  font-size: 25px;
+  line-height: 25px;
+  margin-top: 24px;
+}
+
+.p-work-panel__text {
+  font-family: Gen Jyuu Gothic P;
+  font-family: nomal;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.p-about__inner {
+  background-color: #BDE5CD65;
+  height: 670px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-about__title {
+  font: normal normal 900 55px/70px Cooper Std;
+  margin-top: 81px;
+  text-align: center;
+}
+
+.p-about-block {
+  display: flex;
+  margin: 74px auto 0;
+  width: 65%;
+}
+
+.p-about-block__content {
+  flex-grow: 2;
+  margin-left: 25px;
+}
+
+.p-about-block__header {
+  border-bottom: 1px solid;
+  border-color: #707070;
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.p-about-block__text {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 27px;
+  line-height: 40px;
+  margin-top: 42px;
+}
+
+.p-skills__inner {
+  height: 1183px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-skills__title {
+  font: normal normal 900 55px/70px Cooper Std;
+  margin-top: 81px;
+  text-align: center;
+}
+
+.p-skills__subtitle {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.p-skills-block__inner {
+  column-gap: 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 197px auto 0;
+  width: 76%;
+}
+
+.p-skills-block__item {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.p-skills-block__img {
+  margin-right: 23px;
+}
+
+.p-skills-block__header {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.p-skills-block__text {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+
+/* Utility
+  ----------------------------------------------------------------- */
+
+/**
+* Clearfix
+*/
+
+/**
+  * Display
+*/
+
+/**
+  * Margin
+*/
