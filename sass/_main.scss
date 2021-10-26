@@ -129,6 +129,8 @@ Foundation
   }
 }
 
+
+
 /* Main
 ----------------------------------------------------------------- */
 
@@ -382,6 +384,84 @@ Foundation
   line-height: 25px;
 }
 
+.p-contact {
+  background-color: #BDE5CD65;
+  height: 1138px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-contact__title {
+  font: normal normal 900 55px/70px Cooper Std;
+  margin-top: 81px;
+  text-align: center;
+}
+
+.p-contact__subtitle {
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.p-contact-form {
+  margin: 56px auto 0;
+  width: 56%;
+}
+
+.p-contact-from__name {
+  margin-bottom: 25px;
+}
+
+.p-contact-from__label {
+  display: block;
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+
+.p-contact-from__input-name {
+  border: 1px solid #0B3661;
+  font-size: 35px;
+  height: 63px;
+  width: 100%;
+}
+
+.p-contact-form__email {
+  margin-bottom: 25px;
+}
+
+.p-contact-from__input-email {
+  border: 1px solid #0B3661;
+  font-size: 35px;
+  height: 63px;
+  width: 100%;
+}
+
+.p-contact-from__message {
+  margin-bottom: 65px;
+}
+
+.p-contact-from__input-message {
+  border: 1px solid #0B3661;
+  font-size: 35px;
+  height: 303px;
+  width: 100%;
+}
+
+.p-contact-from__btn {
+  background-color: #0B3661;
+  color: #fff;
+  display: block;
+  font-family: Gen Jyuu Gothic P;
+  font-size: 35px;
+  height: 73px;
+  line-height: 40px;
+  margin: 0 auto;
+  width: 329px;
+}
 
 /* Utility
   ----------------------------------------------------------------- */
