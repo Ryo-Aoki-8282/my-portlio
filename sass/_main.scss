@@ -197,6 +197,14 @@ Foundation
   height: 710px;
   justify-content: center;
   width: 100%;
+  @include tabletScreen {
+    background-size: 90%;
+  }
+  @include wideMobileScreen {
+    height: 387px;
+    background-size: 80%;
+  }
+
 }
 
 .p-home__logo {
@@ -207,6 +215,24 @@ Foundation
   margin-top: 200px;
   text-align: center;
   width: 648px;
+  @include tabletScreen {
+    font-size: 60px;
+    line-height: 80px;
+    margin-top: 250px;
+  }
+  @include adjustContentMedia(700px) {
+    font-size: 45px
+  }
+  @include wideMobileScreen {
+    margin-top: 140px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  @include mobileScreen {
+    margin-top: 159px;
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 .p-service__inner {
