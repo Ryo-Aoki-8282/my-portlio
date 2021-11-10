@@ -347,6 +347,19 @@ Foundation
   width: 100%;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-home__inner {
+    background-size: 90%;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-home__inner {
+    height: 387px;
+    background-size: 80%;
+  }
+}
+
 .p-home__logo {
   color: #0B3661;
   display: flex;
@@ -355,6 +368,36 @@ Foundation
   margin-top: 200px;
   text-align: center;
   width: 648px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-home__logo {
+    font-size: 60px;
+    line-height: 80px;
+    margin-top: 250px;
+  }
+}
+
+@media print, screen and (max-width: 700px) {
+  .p-home__logo {
+    font-size: 45px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-home__logo {
+    margin-top: 140px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media print, screen and (max-width: 413px) {
+  .p-home__logo {
+    margin-top: 159px;
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 .p-service__inner {
