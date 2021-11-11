@@ -199,6 +199,7 @@ Foundation
   width: 100%;
   @include tabletScreen {
     background-size: 90%;
+    height: 600px;
   }
   @include wideMobileScreen {
     height: 387px;
@@ -219,6 +220,9 @@ Foundation
     font-size: 60px;
     line-height: 80px;
     margin-top: 250px;
+  }
+  @include tabletScreen {
+    margin-top: 200px;
   }
   @include adjustContentMedia(700px) {
     font-size: 45px
@@ -241,12 +245,26 @@ Foundation
   width: 100%;
   overflow: hidden;
   position: relative;
+  @include tabletScreen {
+    height: 700px;
+  }
+  @include wideMobileScreen {
+    height: 702px;
+  }
 }
 
 .p-service__title {
   font: normal normal 900 55px/70px Cooper Std;
   margin-top: 81px;
   text-align: center;
+  @include tabletScreen {
+    margin-top: 65px;
+    font: normal normal 900 40px/55px Cooper Std;
+  }
+  @include wideMobileScreen {
+    margin-top: 30px;
+    font: normal normal 900 20px/20px Cooper Std;
+  }
 }
 
 .p-service__subtitle {
@@ -254,18 +272,42 @@ Foundation
   font-size: 35px;
   line-height: 40px;
   text-align: center;
+  @include tabletScreen {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  @include wideMobileScreen {
+    font-size: 16px;
+    line-height: 40px;
+  }
 }
 
 .p-service-block__heading {
   font-family: Gen Jyuu Gothic P;
   font-size: 35px;
   line-height: 40px;
+  @include tabletScreen {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  @include wideMobileScreen {
+    font-size: 16px;
+    line-height: 40px;
+  }
 }
 
 .p-service-block__text {
   font-family: Gen Jyuu Gothic P;
   font-size: 27px;
   line-height: 40px;
+  @include tabletScreen {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @include wideMobileScreen {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 .p-service-block--left {
@@ -274,17 +316,45 @@ Foundation
   position: absolute;
   top: 262px;
   left: 0;
-  width: 1507px;
+  width: 78%;
+  @include adjustContentMedia(1400px){
+    width: 100%;
+    text-align: center;
+  }
+  @include tabletScreen {
+    top: 200px;
+    height: 180px;
+  }
+  @include wideMobileScreen {
+    border-radius: 50%;
+    height: 284px;
+    margin: auto;
+    right: 0;
+    top: 105px;
+    width: 284px;
+  }
 }
 
 .p-service-block__inner--left {
-  margin-left: 298px;
-  width: 870px;
+  margin-left: 18%;
+  width: 100%;
+  @include adjustContentMedia(1400px){
+    margin: 0 auto;
+  }
+  @include wideMobileScreen {
+    width: 190px;    
+  }
   .p-service-block__heading {
     margin-top: 20px;
+    @include wideMobileScreen {
+      margin-top: 30px;
+    }
   }
   .p-service-block__text {
     margin-top: 20px;
+    @include wideMobileScreen {
+      margin-top: 44px;
+    }
   }
 }
 
@@ -294,17 +364,46 @@ Foundation
   height: 242px;
   right: 0;
   position: absolute;
-  width: 1507px;
+  width: 78%;
+  @include adjustContentMedia(1400px){
+    width: 100%;
+    text-align: center;
+  }
+  @include tabletScreen {
+    bottom: 90px;
+    height: 180px;
+  }
+  @include wideMobileScreen {
+    border-radius: 50%;
+    bottom: 15px;
+    height: 284px;
+    margin: auto;
+    left: 0;
+    width: 284px;
+  }
 }
 
 .p-service-block__inner--right {
-  margin-left: 369px;
-  width: 930px;
+  margin-left: 24%;
+  width: 100%;
+  @include adjustContentMedia(1400px){
+    margin-left: 0;
+  }
+  @include wideMobileScreen {
+    margin: 0 auto;
+    width: 203px
+  }
   .p-service-block__heading {
     margin-top: 20px;
+    @include wideMobileScreen {
+      margin-top: 30px;
+    }
   }
   .p-service-block__text {
     margin-top: 20px;
+    @include wideMobileScreen {
+      margin-top: 26px;
+    }
   }
 }
 
