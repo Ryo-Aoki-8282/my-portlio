@@ -659,10 +659,36 @@ Foundation
   width: 100%;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-work__inner {
+    height: 700px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-work__inner {
+    height: 789px;
+  }
+}
+
 .p-work__title {
   font: normal normal 900 55px/70px Cooper Std;
   margin-top: 81px;
   text-align: center;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-work__title {
+    margin-top: 65px;
+    font: normal normal 900 40px/55px Cooper Std;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-work__title {
+    margin-top: 30px;
+    font: normal normal 900 20px/20px Cooper Std;
+  }
 }
 
 .p-work__subtitle {
@@ -672,14 +698,53 @@ Foundation
   text-align: center;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-work__subtitle {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-work__subtitle {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
 .p-work-panel__block {
   display: flex;
   margin: 86px auto 0;
   width: 80%;
 }
 
+@media print, screen and (max-width: 599px) {
+  .p-work-panel__block {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+}
+
 .p-work-panel__item {
   margin: 0 17px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-work-panel__item {
+    width: 243px;
+    margin-top: 31px;
+  }
+}
+
+.p-work-panel__main-img {
+  width: 100%;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-work-panel__main-img img {
+    width: 243px;
+  }
 }
 
 .p-work-panel__header {
@@ -690,11 +755,40 @@ Foundation
   margin-top: 24px;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-work-panel__header {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-work-panel__header {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 18px;
+  }
+}
+
 .p-work-panel__text {
   font-family: Gen Jyuu Gothic P;
   font-family: nomal;
   font-size: 25px;
   line-height: 25px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-work-panel__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-work-panel__text {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 .p-about__inner {
