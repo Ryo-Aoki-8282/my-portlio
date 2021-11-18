@@ -799,10 +799,36 @@ Foundation
   position: relative;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-about__inner {
+    height: 700px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-about__inner {
+    height: 466px;
+  }
+}
+
 .p-about__title {
   font: normal normal 900 55px/70px Cooper Std;
   margin-top: 81px;
   text-align: center;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-about__title {
+    margin-top: 65px;
+    font: normal normal 900 40px/55px Cooper Std;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-about__title {
+    margin-top: 30px;
+    font: normal normal 900 20px/20px Cooper Std;
+  }
 }
 
 .p-about-block {
@@ -811,9 +837,28 @@ Foundation
   width: 65%;
 }
 
+@media print, screen and (max-width: 599px) {
+  .p-about-block {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-about-block {
+    margin-top: 30px;
+  }
+}
+
 .p-about-block__content {
   flex-grow: 2;
   margin-left: 25px;
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-about-block__content {
+    margin-left: 0;
+  }
 }
 
 .p-about-block__header {
@@ -824,11 +869,53 @@ Foundation
   line-height: 40px;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-about-block__header {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-about-block__header {
+    font-size: 16px;
+    line-height: 40px;
+    margin-top: 29px;
+  }
+}
+
 .p-about-block__text {
   font-family: Gen Jyuu Gothic P;
   font-size: 27px;
   line-height: 40px;
   margin-top: 42px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-about-block__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-about-block__text {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-about-block__img img {
+    width: 180px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-about-block__img img {
+    width: 164px;
+  }
 }
 
 .p-skills__inner {

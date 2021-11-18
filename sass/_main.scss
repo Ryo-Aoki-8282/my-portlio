@@ -516,23 +516,47 @@ Foundation
   width: 100%;
   overflow: hidden;
   position: relative;
+  @include tabletScreen {
+    height: 700px;
+  }
+  @include wideMobileScreen {
+    height: 466px;
+  }
 }
 
 .p-about__title {
   font: normal normal 900 55px/70px Cooper Std;
   margin-top: 81px;
   text-align: center;
+  @include tabletScreen {
+    margin-top: 65px;
+    font: normal normal 900 40px/55px Cooper Std;
+  }
+  @include wideMobileScreen {
+    margin-top: 30px;
+    font: normal normal 900 20px/20px Cooper Std;
+  }
 }
 
 .p-about-block {
   display: flex;
   margin: 74px auto 0;
   width: 65%;
+  @include wideMobileScreen {
+    flex-direction: column;
+    text-align: center;
+  }
+  @include wideMobileScreen {
+    margin-top: 30px;
+  }
 }
 
 .p-about-block__content {
   flex-grow: 2;
   margin-left: 25px;
+  @include wideMobileScreen {
+    margin-left: 0;
+  }
 }
 
 .p-about-block__header {
@@ -541,6 +565,15 @@ Foundation
   font-family: Gen Jyuu Gothic P;
   font-size: 35px;
   line-height: 40px;
+  @include tabletScreen {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  @include wideMobileScreen {
+    font-size: 16px;
+    line-height: 40px;
+    margin-top: 29px;
+  }
 }
 
 .p-about-block__text {
@@ -548,6 +581,26 @@ Foundation
   font-size: 27px;
   line-height: 40px;
   margin-top: 42px;
+  @include tabletScreen {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @include wideMobileScreen {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+}
+
+.p-about-block__img {
+  img {
+    @include tabletScreen {
+      width: 180px;
+    }
+    @include wideMobileScreen {
+      width: 164px;
+    }
+  }
 }
 
 .p-skills__inner {
