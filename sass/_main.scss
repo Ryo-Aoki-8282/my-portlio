@@ -608,9 +608,6 @@ Foundation
   width: 100%;
   overflow: hidden;
   position: relative;
-  @include tabletScreen {
-    height: 700px;
-  }
   @include wideMobileScreen {
     height: 761px;
   }
@@ -656,6 +653,7 @@ Foundation
   }
   @include tabletScreen {
     column-gap: 3%;
+    margin: 50px auto 0;
     width: 98%;
   }
   @include wideMobileScreen {
@@ -716,12 +714,26 @@ Foundation
   width: 100%;
   overflow: hidden;
   position: relative;
+  @include tabletScreen {
+    height: 900px;
+  }
+  @include wideMobileScreen {
+    height: 601px;
+  }
 }
 
 .p-contact__title {
   font: normal normal 900 55px/70px Cooper Std;
   margin-top: 81px;
   text-align: center;
+  @include tabletScreen {
+    margin-top: 65px;
+    font: normal normal 900 40px/55px Cooper Std;
+  }
+  @include wideMobileScreen {
+    margin-top: 30px;
+    font: normal normal 900 20px/20px Cooper Std;
+  }
 }
 
 .p-contact__subtitle {
@@ -729,15 +741,37 @@ Foundation
   font-size: 35px;
   line-height: 40px;
   text-align: center;
+  @include tabletScreen {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  @include wideMobileScreen {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  br:nth-child(2) {
+    display: none;
+    @include wideMobileScreen {
+      display: inline;
+    }
+  }
 }
 
 .p-contact-form {
   margin: 56px auto 0;
   width: 56%;
+  @include wideMobileScreen {
+    margin: 10px auto 0;
+    width: 86%;
+  }
 }
 
 .p-contact-from__name {
   margin-bottom: 25px;
+  @include tabletScreen {
+    margin-bottom: 12px;
+  }
 }
 
 .p-contact-from__label {
@@ -746,6 +780,14 @@ Foundation
   font-size: 35px;
   line-height: 40px;
   margin-bottom: 8px;
+  @include tabletScreen {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  @include wideMobileScreen {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 .p-contact-from__input-name {
@@ -753,10 +795,21 @@ Foundation
   font-size: 35px;
   height: 63px;
   width: 100%;
+  @include tabletScreen {
+    font-size: 25px;
+    height: 35px;
+  }
+  @include wideMobileScreen {
+    font-size: 15px;
+    height: 25px;
+  }
 }
 
 .p-contact-form__email {
   margin-bottom: 25px;
+  @include tabletScreen {
+    margin-bottom: 12px;
+  }
 }
 
 .p-contact-from__input-email {
@@ -764,10 +817,24 @@ Foundation
   font-size: 35px;
   height: 63px;
   width: 100%;
+  @include tabletScreen {
+    font-size: 25px;
+    height: 35px;
+  }
+  @include wideMobileScreen {
+    font-size: 15px;
+    height: 25px;
+  }
 }
 
 .p-contact-from__message {
   margin-bottom: 65px;
+  @include tabletScreen {
+    margin-bottom: 30px;
+  }
+  @include wideMobileScreen {
+    margin-bottom: 12px;
+  }
 }
 
 .p-contact-from__input-message {
@@ -775,6 +842,14 @@ Foundation
   font-size: 35px;
   height: 303px;
   width: 100%;
+  @include tabletScreen {
+    font-size: 25px;
+    height: 250px;
+  }
+  @include wideMobileScreen {
+    font-size: 15px;
+    height: 178px;
+  }
 }
 
 .p-contact-from__btn {
@@ -787,6 +862,17 @@ Foundation
   line-height: 40px;
   margin: 0 auto;
   width: 329px;
+  @include tabletScreen {
+    font-size: 25px;
+    height: 50px;
+    width: 250px;
+  }
+  @include wideMobileScreen {
+    font-size: 15px;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+  }
 }
 
 /* Utility
