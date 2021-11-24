@@ -925,10 +925,36 @@ Foundation
   position: relative;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-skills__inner {
+    height: 700px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-skills__inner {
+    height: 761px;
+  }
+}
+
 .p-skills__title {
   font: normal normal 900 55px/70px Cooper Std;
   margin-top: 81px;
   text-align: center;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-skills__title {
+    margin-top: 65px;
+    font: normal normal 900 40px/55px Cooper Std;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-skills__title {
+    margin-top: 30px;
+    font: normal normal 900 20px/20px Cooper Std;
+  }
 }
 
 .p-skills__subtitle {
@@ -936,6 +962,20 @@ Foundation
   font-size: 35px;
   line-height: 40px;
   text-align: center;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-skills__subtitle {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-skills__subtitle {
+    font-size: 16px;
+    line-height: 40px;
+  }
 }
 
 .p-skills-block__inner {
@@ -946,13 +986,46 @@ Foundation
   width: 76%;
 }
 
+@media print, screen and (max-width: 1400px) {
+  .p-skills-block__inner {
+    width: 90%;
+  }
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-skills-block__inner {
+    column-gap: 3%;
+    width: 98%;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-skills-block__inner {
+    grid-template-columns: 1fr;
+    margin: 10px auto 0;
+    width: 90%;
+  }
+}
+
 .p-skills-block__item {
   display: flex;
   margin-bottom: 64px;
 }
 
+@media print, screen and (max-width: 599px) {
+  .p-skills-block__item {
+    margin-bottom: 20px;
+  }
+}
+
 .p-skills-block__img {
   margin-right: 23px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-skills-block__img img {
+    width: 80px;
+  }
 }
 
 .p-skills-block__header {
@@ -961,10 +1034,38 @@ Foundation
   line-height: 40px;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-skills-block__header {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-skills-block__header {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
 .p-skills-block__text {
   font-family: Gen Jyuu Gothic P;
   font-size: 25px;
   line-height: 25px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-skills-block__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-skills-block__text {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 .p-contact {
