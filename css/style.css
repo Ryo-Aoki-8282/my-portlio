@@ -925,12 +925,6 @@ Foundation
   position: relative;
 }
 
-@media print, screen and (max-width: 1024px) {
-  .p-skills__inner {
-    height: 700px;
-  }
-}
-
 @media print, screen and (max-width: 599px) {
   .p-skills__inner {
     height: 761px;
@@ -995,6 +989,7 @@ Foundation
 @media print, screen and (max-width: 1024px) {
   .p-skills-block__inner {
     column-gap: 3%;
+    margin: 50px auto 0;
     width: 98%;
   }
 }
@@ -1076,10 +1071,36 @@ Foundation
   position: relative;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-contact {
+    height: 900px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-contact {
+    height: 601px;
+  }
+}
+
 .p-contact__title {
   font: normal normal 900 55px/70px Cooper Std;
   margin-top: 81px;
   text-align: center;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-contact__title {
+    margin-top: 65px;
+    font: normal normal 900 40px/55px Cooper Std;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-contact__title {
+    margin-top: 30px;
+    font: normal normal 900 20px/20px Cooper Std;
+  }
 }
 
 .p-contact__subtitle {
@@ -1089,13 +1110,51 @@ Foundation
   text-align: center;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-contact__subtitle {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-contact__subtitle {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+}
+
+.p-contact__subtitle br:nth-child(2) {
+  display: none;
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-contact__subtitle br:nth-child(2) {
+    display: inline;
+  }
+}
+
 .p-contact-form {
   margin: 56px auto 0;
   width: 56%;
 }
 
+@media print, screen and (max-width: 599px) {
+  .p-contact-form {
+    margin: 10px auto 0;
+    width: 86%;
+  }
+}
+
 .p-contact-from__name {
   margin-bottom: 25px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-contact-from__name {
+    margin-bottom: 12px;
+  }
 }
 
 .p-contact-from__label {
@@ -1106,6 +1165,20 @@ Foundation
   margin-bottom: 8px;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-contact-from__label {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-contact-from__label {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
 .p-contact-from__input-name {
   border: 1px solid #0B3661;
   font-size: 35px;
@@ -1113,8 +1186,28 @@ Foundation
   width: 100%;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-contact-from__input-name {
+    font-size: 25px;
+    height: 35px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-contact-from__input-name {
+    font-size: 15px;
+    height: 25px;
+  }
+}
+
 .p-contact-form__email {
   margin-bottom: 25px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-contact-form__email {
+    margin-bottom: 12px;
+  }
 }
 
 .p-contact-from__input-email {
@@ -1124,8 +1217,34 @@ Foundation
   width: 100%;
 }
 
+@media print, screen and (max-width: 1024px) {
+  .p-contact-from__input-email {
+    font-size: 25px;
+    height: 35px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-contact-from__input-email {
+    font-size: 15px;
+    height: 25px;
+  }
+}
+
 .p-contact-from__message {
   margin-bottom: 65px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-contact-from__message {
+    margin-bottom: 30px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-contact-from__message {
+    margin-bottom: 12px;
+  }
 }
 
 .p-contact-from__input-message {
@@ -1133,6 +1252,20 @@ Foundation
   font-size: 35px;
   height: 303px;
   width: 100%;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-contact-from__input-message {
+    font-size: 25px;
+    height: 250px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-contact-from__input-message {
+    font-size: 15px;
+    height: 178px;
+  }
 }
 
 .p-contact-from__btn {
@@ -1145,6 +1278,23 @@ Foundation
   line-height: 40px;
   margin: 0 auto;
   width: 329px;
+}
+
+@media print, screen and (max-width: 1024px) {
+  .p-contact-from__btn {
+    font-size: 25px;
+    height: 50px;
+    width: 250px;
+  }
+}
+
+@media print, screen and (max-width: 599px) {
+  .p-contact-from__btn {
+    font-size: 15px;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+  }
 }
 
 /* Utility
